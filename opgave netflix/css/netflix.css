@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+.hero-area {
+    height: 430px;
+    background-image: url("../images/squidgame.jpg");  
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVIGATION */
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 40px;
+}
+
+.browse {
+    display: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 18px;
+    font-size: 14px;
+}
+
+/* HERO */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 180px;
+}
+
+.hero-content {
+    max-width: 450px;
+}
+
+.title-image {
+    width: 330px;
+    margin-bottom: 25px;
+}
+
+/* BTNS */
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 8px 26px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.play, .list {
+    background: #444;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+/* DESCRIPTION */
+.description {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* POPULAR */
+.popular {
+    background: #141414;
+    padding: 25px 180px 60px 180px;
+}
+
+.popular h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.reccomendations {
+    display: flex;
+    gap: 20px;
+}
+
+.reccomendations img {
+    width: 190px;
+    height: 110px;
+    object-fit: cover;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+    .hero-area {
+        height: 500px;                
+        background-position: center top;
+    }
+
+    .nav {
+        padding: 15px 20px;
+        gap: 20px;
+    }
+
+    .hero {
+        padding-left: 40px;           
+    }
+
+     .browse {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .title-image {
+        width: 260px;
+    }
+
+    .popular {
+        padding: 25px 40px 50px 40px;
+    }
+
+    .reccomendations {
+        flex-wrap: wrap;              
+    }
+
+    .reccomendations img {
+        width: 48%;                  
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .hero-area {
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .nav {
+        padding: 12px 15px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .browse {
+        display: inline-block;
+    }
+
+     .menu {
+        display: none;
+    }
+
+    .menu a {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .hero {
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: flex-end;       
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .title-image {
+        width: 230px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .popular {
+        padding: 25px 20px 40px 20px;
+    }
+
+    .reccomendations img {
+        width: 100%;                  
+    }
+}
