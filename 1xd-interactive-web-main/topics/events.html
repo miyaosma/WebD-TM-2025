@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS — Events</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* This CSS code is only used on this page for your exercices, feel free to work in here */
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .zones {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .zone {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        .hiddenMessage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">home</a>
+    </nav>
+    <header>
+        <h1>Events</h1>
+        <section class="info">
+            <p>Events allow us to respond to use input like typing, clicking or moving the mouse somewhere.</p>
+            <p id="demo">Just hover your mouse cursor over this sentence to see a <em>mouseover</em> event in action.</p>
+        </section>
+        <h2>Resources</h2>
+        <h3>Videos</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/learning/javascript-essential-training-3">LinkedIN Learning</a> chapter 7.</li>
+        </ul>
+
+        <h3>Mozilla Developer Network</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events">Introduction to events</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#using_addeventlistener">addEventListener()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#preventing_default_behavior">preventDefault()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Event_bubbling">Event Bubbling</a></li>
+            <li>Popular events to handle are: click, change, mouseover, mouseout, mousemove, keydown, keyup, keypress, submit, focus, blur, scroll</li>
+        </ul>
+        
+        <h2>Instructions</h2>
+        <p>
+            Read the instructions in <code>topics/events.starter.js</code>
+        </p>
+    </header>
+
+    <section class="questions">
+        <div>
+            <h4>1 — click</h4>
+            <p>Click the button to show an alert</p>
+            <div>
+                <button id="btn1">Click me</button>
+            </div>
+        </div>
+
+        <div>
+            <h4>2 — mouse events</h4>
+            <p>Hover over the square to color it</p>
+            <div class="zones">
+                <div id="zone1" class="zone"></div>
+            </div>
+        </div>
+
+        <div>
+            <h4>3 — preventing the default action</h4>
+            <p>Click on the link and show the hidden message</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="show3">Click here</a>
+            <p class="hiddenMessage">Never gonna give you up 🎵.</p>
+        </div>
+
+        <div>
+            <h4>4 — event Bubbling</h4>
+            <p>Hover over a square to color it, without manually adding 4 events</p>
+            <div class="zones" id="bubbleZone">                
+                <div class="zone1 zone"></div>
+                <div class="zone2 zone"></div>
+                <div class="zone3 zone"></div>    
+                <div class="zone4 zone"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h4>5 — toggle checkbox</h4>
+            <p>Show or hide the div#toggle based on checkbox selection</p>
+            
+            <div style="margin-bottom: 1em;">
+                <input type="checkbox" id="onOff" checked>
+                <label for="onOff">Toggle the div</label>
+            </div>
+
+            <div id="toggle">Hello 👋🏼</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="credits">
+            <a href="https://www.goodbytes.be/"><img class="credits__avatar" src="../images/goodbytes.jpg" alt="GoodBytes — Web Developer"></a>
+            <p class="credits__text">Created by your coding friend GoodBytes.be</p>
+        </div>
+    </footer>
+
+    <script>
+        // mouseover #demo should color it, mouseout should remove the color
+        const demo = document.getElementById('demo');
+        demo.addEventListener('mouseover', () => {
+            demo.style.color = 'red';
+        });
+        demo.addEventListener('mouseout', () => {
+            demo.style.color = '';
+        });
+    </script>
+
+    <script src="events.starter.js"></script>
+</body>
+</html>

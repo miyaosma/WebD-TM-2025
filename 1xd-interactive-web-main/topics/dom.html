@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS — DOM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* This CSS code is only used on this page for your exercices, feel free to work in here */
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">home</a>
+    </nav>
+    <header>
+        <h1>DOM — Document Object Model</h1>
+        <h2>Resources</h2>
+        <h3>Videos</h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/learning/javascript-essential-training-3">LinkedIN Learning</a> chapter 5.</li>
+        </ul>
+
+        <h3>Mozilla Developer Network</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Introduction to the DOM</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">getElementById()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">querySelectorAll()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">createElement()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">innerHTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">setAttribute()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute">getAttribute()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style">style</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">appendChild()</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Solve_HTML_problems/Use_data_attributes">Data attributes</a></li>
+
+        </ul>
+        
+        <h2>Instructions</h2>
+        <p>
+            Let's start with the basics, read the instructions in <code>topics/dom.starter.js</code>
+        </p>
+    </header>
+
+    <section class="questions">
+        <div>
+            <h4>1 - get an element by id</h4>
+            <p id="paragraph1">Never gonna give you up</p>
+            <p id="paragraph2">Never gonna let you down</p>
+        </div>
+
+        <div>
+            <h4>2 - change the innerHTML of a element</h4>
+            <p id="paragraph3">Never gonna run around</p>
+        </div>
+
+        <div>
+            <h4>3 - get multiple elements by class</h4>
+            <span class="grabme">👀</span>
+            <span class="grabme">👀</span>
+            <span class="grabme">👀</span>
+            <span class="grabme">👀</span>
+            <span class="grabme">👀</span>
+        </div>
+
+        <div>
+            <h4>4 - change the CSS class</h4>
+            <p id="message" class="success">This should be an error.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="credits">
+            <a href="https://www.goodbytes.be/"><img class="credits__avatar" src="../images/goodbytes.jpg" alt="GoodBytes — Web Developer"></a>
+            <p class="credits__text">Created by your coding friend GoodBytes.be</p>
+        </div>
+    </footer>
+
+    <script src="dom.starter.js"></script>
+</body>
+</html>

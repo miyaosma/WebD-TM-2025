@@ -1,0 +1,66 @@
+:root {
+    --fontSizeXS: 0.5rem;
+    --fontSizeS: 0.707rem;
+    --fontSize: 1rem;
+    --fontSizeM: 1.414rem;
+    --fontSizeL: 1.999rem;
+    --fontSizeXL: 2.827rem;
+    --fontSizeXXL: 3.998rem;
+  
+    --spacingXS: 0.5rem;
+    --spacingS: 0.707rem;
+    --spacing: 1rem;
+    --spacingM: 1.414rem;
+    --spacingL: 1.999rem;
+    --spacingXL: 2.827rem;
+    --spacingXXL: 3.998rem;
+  }
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: var(--spacingL)
+}
+
+footer {
+    margin-top: 2em;
+}
+
+footer p {
+    font-size: 0.8em;
+    margin: 0.1em
+}
+
+.credits {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
+
+.credits__avatar {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.credits__text {
+    font-size: 0.7em;
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: -12em;
+    width: 11em;
+    padding: 0.2em;
+    background-color: rgba(255, 255, 255, 0.95);   
+    margin: 0;
+    opacity: 0;
+}
+
+.credits__avatar:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.credits a:hover ~ .credits__text {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
